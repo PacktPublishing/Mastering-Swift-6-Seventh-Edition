@@ -11,7 +11,7 @@ func buildString(@StringBuilder _ components: () -> String) -> String {
     return components()
 }
 
-print("---String Builder---")
+
 let result = buildString {
     "Hello, "
     "Mastering "

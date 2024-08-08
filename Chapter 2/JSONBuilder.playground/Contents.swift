@@ -25,7 +25,7 @@ struct JSONBuilder {
     }
 }
 
-print("---JSON builder---)")
+
 @JSONBuilder
 func buildJSON() -> [String: Any] {
     [
