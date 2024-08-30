@@ -33,7 +33,7 @@ func getGradeForAssignment(assignment: inout GradeValueType) {
 
 func testInOut() {
     var mathGrades = [GradeValueType]()
-    var students = ["Jon", "Kailey", "Kai"]
+    let students = ["Jon", "Kailey", "Kai"]
     var mathAssignment = GradeValueType(name: "", assignment: "Math Assignment", grade: 0)
 
     for student in students {
