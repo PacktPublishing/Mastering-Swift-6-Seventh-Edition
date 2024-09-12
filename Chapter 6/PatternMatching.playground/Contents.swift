@@ -26,7 +26,7 @@ func showPrecipitation(_ weather: Weather) {
     case .sunny, .cloudy:
         print("No precipitation today")
     case .rainy(let intensity):
-        print("It rained with an intensity \(intensity).")
+        print("It rained with an intensity of \(intensity).")
     case .snowy(let amount):
         print("It snowed \(amount) inches.")
     }

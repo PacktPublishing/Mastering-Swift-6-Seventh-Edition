@@ -24,3 +24,10 @@ func testDefineWithRawValue() {
 
 testDriection()
 testDefineWithRawValue()
+
+enum UrlList: String {
+    case MyUrl = "http://myurl.com"
+    case ServiceUrl = "http://serviceurl.com"
+}
+
+let serviceUrl = URL(string: UrlList.ServiceUrl.rawValue)

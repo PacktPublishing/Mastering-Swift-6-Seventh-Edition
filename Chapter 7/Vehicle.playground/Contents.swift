@@ -25,7 +25,7 @@ func testVehicle() {
         print("Property: \(label ?? "Unknown"), Value: \(value)")
     }
 
-    print("Display Style: \(mirrorCar.displayStyle)")
+    print("Display Style: \(mirrorCar.displayStyle!)")
     print("Subject Type: \(mirrorCar.subjectType)")
 
     if let mirrorCarSuper = mirrorCar.superclassMirror {

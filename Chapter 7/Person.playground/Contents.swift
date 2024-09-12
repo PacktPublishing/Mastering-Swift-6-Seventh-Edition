@@ -4,6 +4,7 @@ struct Person {
     var firstName: String
     var lastName: String
     var age: Int
+
 }
 
 func testPerson() {
@@ -14,7 +15,7 @@ func testPerson() {
         print("Property: \(label ?? "Unknown"), Value: \(value)")
     }
 
-    print("Display Style: \(mirror.displayStyle)")
+    print("Display Style: \(mirror.displayStyle!)")
     print("Subject Type: \(mirror.subjectType)")
 }
 
