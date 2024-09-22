@@ -1,18 +1,26 @@
 import Cocoa
 
-enum MyError: Error {
-    case Minor
-    case Bad
-    case Terrible(description:String)
-}
+var greeting = "Hello, playground"
 
-enum PlayerNumberError: Error {
+enum PlayerNumberError: Error, LocalizedError {
     case NumberTooHigh(description: String)
     case NumberTooLow(description: String)
     case NumberAlreadyAssigned
     case NumberDoesNotExist
+    
+    var errorDescription: String? {
+        switch self {
+        case .NumberTooHigh(description: let description):
+            return description
+        case .NumberTooLow(description: let description):
+            return description
+        case .NumberAlreadyAssigned:
+            return "Player number already assigned"
+        case .NumberDoesNotExist:
+            return "Player number does not exist"
+        }
+    }
 }
-
 
 typealias BaseballPlayer = (firstName: String, lastName: String, number: Int)
 
@@ -45,55 +53,29 @@ struct BaseballTeam {
     
 }
 
-func testBaseballPlayer() {
-    var myTeam = BaseballTeam()
 
+func testBaseballPlayer2() {
+    var myTeam = BaseballTeam()
     do {
-        try myTeam.addPlayer(player:("David", "Ortiz", 34))
+        try myTeam.addPlayer(player:("David", "Ortiz", 100))
         print("Player added")
-    } catch PlayerNumberError.NumberTooHigh(let description) {
-        print("Error: \(description)")
-    } catch PlayerNumberError.NumberTooLow(let description) {
-        print("Error: \(description)")
-    } catch PlayerNumberError.NumberAlreadyAssigned {
-        print("Error: Number already assigned")
+    } catch let error as PlayerNumberError {
+        print("Error: " + error.localizedDescription)
     } catch {
-        print("Error: Unknown Error")
+        print("Unknown error")
     }
-    
     
     do {
         let player = try myTeam.getPlayerByNumber(number: 34)
         print("Player is \(player.firstName) \(player.lastName)")
-    } catch PlayerNumberError.NumberDoesNotExist {
-        print("No player has that number")
+    } catch let error as PlayerNumberError {
+        print("Error: " + error.localizedDescription)
     } catch {
-        print("Error: Unknown Error")
+        print("Unknown error")
     }
-
 }
 
-
-func deferFunction() throws {
-    print("Function started")
-    var myTeam = BaseballTeam()
-    var str: String?
-    defer {
-        print("In defer block")
-        if let s = str {
-            print("str is \(s)")
-        }
-    }
-    str = "Test String"
-    try myTeam.addPlayer(player:("David", "Ortiz", 340))
-    print("Function finished")
-}
+testBaseballPlayer2()
 
 
-testBaseballPlayer()
 
-do {
-  try deferFunction()
-} catch {
-  print("error found")
-}

@@ -101,4 +101,4 @@ func testTransformAndReference() {
 testRegexBuilder("Hello from RegexBuilder and Swift")
 testTransformAndReference()
 test("Hello from RegexBuilder and Swift")
-
+validateEmailAddressRegexBuilder("hoffman.jon@mydomain.com")

@@ -1,8 +1,9 @@
 import Cocoa
 
 
-func validateEmailAddressLiteral(_ address: String) -> Bool {
+func validateEmailAddressLiteral() -> Bool {
     let pattern = /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/.ignoresCase()
+    let address = "hoffman.jon@mydomain.com"
     let match = address.wholeMatch(of: pattern)
 
     return match != nil
@@ -19,3 +20,4 @@ func testRegularExpressionLiteral(_ text: String) {
 }
 
 testRegularExpressionLiteral("Hello from regex literal")
+validateEmailAddressLiteral()

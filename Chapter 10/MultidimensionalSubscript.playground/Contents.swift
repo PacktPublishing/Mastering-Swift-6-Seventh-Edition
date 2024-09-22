@@ -22,3 +22,10 @@ struct SayHello {
     }
 }
 
+var board = TicTacToe()
+board[1,1] = "x"
+board[0,0] = "o"
+
+
+var message = SayHello()
+var myMessage = message[messageText: "Bonjour", messageName: "Jon", 5]

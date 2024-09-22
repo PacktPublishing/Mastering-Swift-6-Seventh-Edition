@@ -4,7 +4,7 @@ class MyNames {
     private var names = ["Jon", "Kailey", "Kai"]
     subscript(index: Int) -> String {
         get {
-            return names[index]
+            names[index]
         }
         set {
             names[index] = newValue
