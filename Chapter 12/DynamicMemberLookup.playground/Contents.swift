@@ -21,3 +21,6 @@ struct BaseballTeam {
     }
 
 }
+
+var redsox = BaseballTeam(city: "Boston", nickName: "Red Sox", wins: 108, losses: 54, year: 2018)
+print("The \(redsox.fullname) won \(redsox.percent) of their games in \(redsox.year)")
