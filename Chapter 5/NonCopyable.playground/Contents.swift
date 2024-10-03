@@ -23,7 +23,7 @@ func userFunction() {
 }
 
 
-struct SecrectMessage: ~Copyable, Message {
+struct SecretMessage: ~Copyable, Message {
     private var message: String
     init(_ message: String) {
         self.message = message
@@ -35,12 +35,13 @@ struct SecrectMessage: ~Copyable, Message {
 }
 
 func secretMessageFunction() {
-    var secrectMessage = SecrectMessage("My Message")
+    var SecretMessage = SecretMessage("My Message")
         
-    secrectMessage.read()
- //   secrectMessage.read()
+    SecretMessage.read()
+ //   SecretMessage.read()
 }
 
+userFunction()
 secretMessageFunction()
 
 protocol Message: ~Copyable {

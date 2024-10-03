@@ -42,4 +42,11 @@ func testPatternMatching() {
     showPrecipitation(.snowy(amount: 8))
 }
 
+func tooWet(_ weather: Weather) {
+  if case let .rainy(intensity) = weather, intensity > 5 {
+    print("Too wet to go outside")
+  }
+}
+
 testPatternMatching()
+tooWet(.rainy(7))

@@ -29,6 +29,10 @@ func testFunction2(num: Int, handler: (_: String) -> Void) {
     }
 }
 
+testFunction2(num: 5) {  name in
+    print("Hello from \(name)")
+}
+
 testFunction2(num: 5) {
     print("Hello from \($0)")
 }
