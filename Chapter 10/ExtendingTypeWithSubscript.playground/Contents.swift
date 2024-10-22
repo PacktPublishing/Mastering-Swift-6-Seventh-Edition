@@ -12,5 +12,5 @@ extension String {
 }
 
 let myString = "Hello World"
-var char = myString[3]
+var char = myString[1]
 
