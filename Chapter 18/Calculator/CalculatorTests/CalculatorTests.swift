@@ -17,7 +17,7 @@ struct TestValues {
 @Suite("Calculator test")
 struct Calculator_Test {
     
-    @Test("Addtion Tests", arguments: [
+    @Test("Addition Tests", arguments: [
         TestValues(first: 2, second: 3, answer: 5),
         TestValues(first: 10, second: 11, answer: 21),
         TestValues(first: 3.5, second: 4.5, answer: 8)
@@ -55,7 +55,7 @@ struct Calculator_Test {
     
     @Test func simpleAdditionTest() {
         withKnownIssue("Addition will fail") {
-            #expect(Calculator.addition(2, 2) == )
+            #expect(Calculator.addition(2, 2) == 5)
         }
     }
 }

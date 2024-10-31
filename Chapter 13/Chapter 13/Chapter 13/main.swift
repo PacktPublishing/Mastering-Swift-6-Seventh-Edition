@@ -17,8 +17,11 @@ Task {
 //    await testSerialQueue2()
 //    await testAsyncAfter()
 //    await testDispatchGroup()
+//    await testWorkItem()
+ //   await testDispatchTime()
+    await testDispatchWallTime()
 //    await testDispatchBarrier()
-    testSemaphores()
+//    testSemaphores()
 }
 
 RunLoop.main.run()

@@ -9,7 +9,7 @@ import Foundation
 
 func testSerialQueue() async {
     let squeue = DispatchQueue(label: "squeue.hoffman.jon")
-    let s = {
+    let s: @Sendable () -> Void = {
         performCalculation(1000, tag: "async1")
     }
     squeue.async (execute: s)

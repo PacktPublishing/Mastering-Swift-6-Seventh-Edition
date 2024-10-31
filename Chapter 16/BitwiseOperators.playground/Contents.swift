@@ -38,6 +38,16 @@ func rightShift(numberOne: Int8, amount: Int8) {
     print(">>\(amount) \(resultsRight.binaryFormat(2))")
 }
 
+func overflow() {
+    let add: UInt8 = UInt8.max &+ 1
+    let sub: UInt8 = UInt8.min &- 1
+    let mul: UInt8 = 42 &* 10
+    print("add: \(add): \(add.binaryFormat(2))")
+    print("sub: \(sub): \(sub.binaryFormat(2))")
+    print("mul: \(mul): \(mul.binaryFormat(2))")
+
+}
+
 extension BinaryInteger {
     func binaryFormat(_ nibbles: Int) -> String {
         var number = self
@@ -76,3 +86,6 @@ leftShift(numberOne: 24, amount: 3)
 print("---shift right (>>) Operator---")
 rightShift(numberOne: 24, amount: 1)
 rightShift(numberOne: 24, amount: 4)
+
+print("---Overflow (&+ &- &*) Operator---")
+overflow()

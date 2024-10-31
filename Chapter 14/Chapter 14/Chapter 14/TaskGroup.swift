@@ -10,7 +10,7 @@ import Foundation
 
 func retrieveUserData(_ forUser: String) async -> String {
     print("Retrieving user data for \(forUser)")
-    try? await Task.sleep(nanoseconds: UInt64.random(in: 1...6) * 1_000_000_000)
+    try? await Task.sleep(for: .seconds(Double.random(in: 1...6)))
     return "User Data Retrieved for \(forUser)"
 }
 

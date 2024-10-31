@@ -37,7 +37,7 @@ actor BankAccount {
 func testActor() async {
     let account = BankAccount(5000)
 
-    await account.withdraw(amount: 100)
+    let _ = await account.withdraw(amount: 100)
     print("New Balance \(await account.getBalance())")
     
 }

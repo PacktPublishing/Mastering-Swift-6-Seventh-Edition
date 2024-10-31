@@ -10,7 +10,7 @@ import Foundation
 func testAsyncAfter() async {
     let queue2 = DispatchQueue(label: "squeue.hoffman.jon")
     let delayInSeconds = 2.0
-    let pTime = DispatchTime.now() + Double(delayInSeconds * Double(NSEC_PER_SEC)) / Double(NSEC_PER_SEC)
+    let pTime = DispatchTime.now() + delayInSeconds
     queue2.asyncAfter(deadline: pTime) {
         print("Time's Up")
     }

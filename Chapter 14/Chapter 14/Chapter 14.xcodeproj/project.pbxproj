@@ -11,6 +11,7 @@
 		15285EC42C32CC7300FE97E6 /* AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15285EC32C32CC7300FE97E6 /* AsyncAwait.swift */; };
 		15285EC62C32DFC200FE97E6 /* StructuredConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15285EC52C32DFC200FE97E6 /* StructuredConcurrency.swift */; };
 		15285EC82C330D8500FE97E6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15285EC72C330D8500FE97E6 /* Task.swift */; };
+		158C93772CD29F970023D0BF /* UncheckedSendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C93762CD29F970023D0BF /* UncheckedSendable.swift */; };
 		159CA5C02C35B6DE00F55BA6 /* Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159CA5BF2C35B6DE00F55BA6 /* Sendable.swift */; };
 		15FD73222C35690F0086F256 /* TaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FD73212C35690F0086F256 /* TaskGroup.swift */; };
 		15FD73242C358D280086F256 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FD73232C358D280086F256 /* Actor.swift */; };
@@ -34,6 +35,7 @@
 		15285EC32C32CC7300FE97E6 /* AsyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwait.swift; sourceTree = "<group>"; };
 		15285EC52C32DFC200FE97E6 /* StructuredConcurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuredConcurrency.swift; sourceTree = "<group>"; };
 		15285EC72C330D8500FE97E6 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		158C93762CD29F970023D0BF /* UncheckedSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncheckedSendable.swift; sourceTree = "<group>"; };
 		159CA5BF2C35B6DE00F55BA6 /* Sendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sendable.swift; sourceTree = "<group>"; };
 		15FD73212C35690F0086F256 /* TaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroup.swift; sourceTree = "<group>"; };
 		15FD73232C358D280086F256 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				15FD73212C35690F0086F256 /* TaskGroup.swift */,
 				15FD73232C358D280086F256 /* Actor.swift */,
 				159CA5BF2C35B6DE00F55BA6 /* Sendable.swift */,
+				158C93762CD29F970023D0BF /* UncheckedSendable.swift */,
 			);
 			path = "Chapter 14";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				15285EC82C330D8500FE97E6 /* Task.swift in Sources */,
 				159CA5C02C35B6DE00F55BA6 /* Sendable.swift in Sources */,
+				158C93772CD29F970023D0BF /* UncheckedSendable.swift in Sources */,
 				15285EBD2C32CBF600FE97E6 /* main.swift in Sources */,
 				15285EC42C32CC7300FE97E6 /* AsyncAwait.swift in Sources */,
 				15FD73242C358D280086F256 /* Actor.swift in Sources */,
@@ -211,6 +215,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Debug;
 		};
@@ -266,6 +271,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Release;
 		};

@@ -9,7 +9,7 @@ import Foundation
 
 func testConcurrentQueue() async {
     let cqueue = DispatchQueue(label: "cqueue.hoffman.jon", attributes:.concurrent)
-    let c = { performCalculation(1000, tag: "async1")}
+    let c: @Sendable () -> Void = { performCalculation(1000, tag: "async1")}
     cqueue.async(execute: c)
 }
 
