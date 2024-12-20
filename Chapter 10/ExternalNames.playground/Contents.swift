@@ -12,5 +12,5 @@ struct MathTable {
 
 var mathTable = MathTable(num: 2)
 
-mathTable[multiply: 5]
-mathTable[add: 4]
+print(mathTable[multiply: 5])
+print(mathTable[add: 4])

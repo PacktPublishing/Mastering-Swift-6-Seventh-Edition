@@ -56,7 +56,7 @@ struct Employee: Person, Occupation {
     var experienceYears: Double
     
     func displayInfo() {
-        <#code#>
+        //Display Employee Information
     }
     
 }
@@ -70,7 +70,7 @@ struct Consultant: Person {
     var phoneNumber: String
     
     func displayInfo() {
-        <#code#>
+        //Display Consultant Information
     }
 }
 

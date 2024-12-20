@@ -36,9 +36,7 @@ struct SecretMessage: ~Copyable, Message {
 
 func secretMessageFunction() {
     var SecretMessage = SecretMessage("My Message")
-        
     SecretMessage.read()
- //   SecretMessage.read()
 }
 
 userFunction()

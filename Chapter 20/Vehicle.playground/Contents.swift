@@ -134,18 +134,18 @@ vehicles.append(vh3)
 vehicles.append(vh4)
 
 for  (index,  vehicle)  in  vehicles.enumerated()  {
-    if  let  Vehicle  =  vehicle  as?  AirVehicle  {
+    if  let  _  =  vehicle  as?  AirVehicle  {
         print("Vehicle  at  \(index)  is  Air")
     }
-    if  let  Vehicle  =  vehicle  as?  LandVehicle  {
+    if  let  _  =  vehicle  as?  LandVehicle  {
         print("Vehicle  at  \(index)  is  Land")
     }
-    if  let  Vehicle  =  vehicle  as?  SeaVehicle  {
+    if  let  _  =  vehicle  as?  SeaVehicle  {
         print("Vehicle  at  \(index)  is  Sea")
     }
 }
 
-for  (index, vehicle) in vehicles.enumerated() where vehicle is LandVehicle
+for  (_, vehicle) in vehicles.enumerated() where vehicle is LandVehicle
 {
     if let vh = vehicle as? LandVehicle {
         if vh.landAttack {

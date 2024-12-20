@@ -35,7 +35,7 @@ func testCancelTask() async throws {
         }
         
         print("Loop \(i)")
-        let data = await retrieveUserData()
+        let _ = await retrieveUserData()
     }
 }
 

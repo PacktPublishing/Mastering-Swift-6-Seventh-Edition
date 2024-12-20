@@ -7,6 +7,6 @@ struct MathTable {
     }
 }
 
-var mathTable = MathTable(num: 2)
-mathTable[5]
+var mathTable = MathTable(num: 5)
+print(mathTable[4])
 

@@ -13,10 +13,10 @@ class MyNames {
 }
 
 func testMyNames() {
-    var nam = MyNames()
-    print(nam[0])  //Displays 'Jon'
-    nam[0] = "Buddy"
-    print(nam[0])  //Displays 'Buddy'
+    var name = MyNames()
+    print(name[0])  //Displays 'Jon'
+    name[0] = "Kailey"
+    print(name[0])  //Displays 'Kailey'
 }
 
 testMyNames()

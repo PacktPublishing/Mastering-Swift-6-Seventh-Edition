@@ -36,8 +36,8 @@ func testKeyPath() {
     let names = people.map(\.name)
     print(names)
 
-    let adults = people.filter{ $0[keyPath: \.age] > 18 }
-    let adults2 = people.filter{ $0.age > 18 }
+    let adults = people.filter{ $0[keyPath: \.age] > 17 }
+    let adults2 = people.filter{ $0.age > 17 }
     print(adults)
 }
 

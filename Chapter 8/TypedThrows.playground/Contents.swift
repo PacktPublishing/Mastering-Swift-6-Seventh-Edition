@@ -56,3 +56,4 @@ func testBaseballPlayer() {
     }
 }
 
+testBaseballPlayer()
