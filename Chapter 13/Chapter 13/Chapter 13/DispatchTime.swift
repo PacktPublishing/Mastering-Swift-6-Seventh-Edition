@@ -19,9 +19,9 @@ func testDispatchTime() async {
 }
 
 func testDispatchWallTime() async {
-    let delayInSeconds = 4.0
+    let delayInSeconds = 4
 
-    let delayTime = DispatchWallTime.now() + .seconds(5)
+    let delayTime = DispatchWallTime.now() + .seconds(delayInSeconds)
 
     DispatchQueue.main.asyncAfter(wallDeadline: delayTime) {
         print("After \(delayInSeconds) second delay.")

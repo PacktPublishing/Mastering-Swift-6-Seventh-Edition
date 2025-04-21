@@ -34,7 +34,7 @@ class MyClass2_Unowned {
 
 func testUnownedRef() {
     let class2 = MyClass2_Unowned(name: "Class2_Unowned")
-    let class1: MyClass1_Unowned? = MyClass1_Unowned(name: "class1_Unowned",class2: class2)
+    let class1: MyClass1_Unowned? = MyClass1_Unowned(name: "Class1_Unowned",class2: class2)
     class2.class1 = class1
     print("Classes going out of scope")
 

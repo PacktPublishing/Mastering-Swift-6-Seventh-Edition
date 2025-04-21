@@ -37,7 +37,7 @@ func testSwap() {
 }
 
 func testGenericComparable<T: Comparable>(a: T, b: T) -> Bool{
-   a == b
+   return a == b
 }
 
 

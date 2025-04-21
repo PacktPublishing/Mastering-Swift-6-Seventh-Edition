@@ -43,3 +43,15 @@ func testActor() async {
 }
 
 
+@globalActor
+actor LoggerActor {
+    static let shared = LoggerActor()
+}
+
+@LoggerActor
+struct Logger {
+    static func log(_ message: String) {
+        print("[\(Date())] \(message)")
+    }
+}
+

@@ -13,6 +13,7 @@
 		15285EC82C330D8500FE97E6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15285EC72C330D8500FE97E6 /* Task.swift */; };
 		158C93772CD29F970023D0BF /* UncheckedSendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C93762CD29F970023D0BF /* UncheckedSendable.swift */; };
 		159CA5C02C35B6DE00F55BA6 /* Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159CA5BF2C35B6DE00F55BA6 /* Sendable.swift */; };
+		15D410D52DB6E3F700FA5643 /* AdoptLegacyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D410D42DB6E3F700FA5643 /* AdoptLegacyAPI.swift */; };
 		15FD73222C35690F0086F256 /* TaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FD73212C35690F0086F256 /* TaskGroup.swift */; };
 		15FD73242C358D280086F256 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FD73232C358D280086F256 /* Actor.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		15285EC72C330D8500FE97E6 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		158C93762CD29F970023D0BF /* UncheckedSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncheckedSendable.swift; sourceTree = "<group>"; };
 		159CA5BF2C35B6DE00F55BA6 /* Sendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sendable.swift; sourceTree = "<group>"; };
+		15D410D42DB6E3F700FA5643 /* AdoptLegacyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptLegacyAPI.swift; sourceTree = "<group>"; };
 		15FD73212C35690F0086F256 /* TaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroup.swift; sourceTree = "<group>"; };
 		15FD73232C358D280086F256 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				15FD73232C358D280086F256 /* Actor.swift */,
 				159CA5BF2C35B6DE00F55BA6 /* Sendable.swift */,
 				158C93762CD29F970023D0BF /* UncheckedSendable.swift */,
+				15D410D42DB6E3F700FA5643 /* AdoptLegacyAPI.swift */,
 			);
 			path = "Chapter 14";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				15285EC82C330D8500FE97E6 /* Task.swift in Sources */,
 				159CA5C02C35B6DE00F55BA6 /* Sendable.swift in Sources */,
+				15D410D52DB6E3F700FA5643 /* AdoptLegacyAPI.swift in Sources */,
 				158C93772CD29F970023D0BF /* UncheckedSendable.swift in Sources */,
 				15285EBD2C32CBF600FE97E6 /* main.swift in Sources */,
 				15285EC42C32CC7300FE97E6 /* AsyncAwait.swift in Sources */,

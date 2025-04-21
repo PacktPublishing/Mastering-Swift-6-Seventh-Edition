@@ -16,6 +16,7 @@ print("Hello, World!")
 //await cancelTask()
 //await testTaskGroup()
 //await testActor()
-testSendable()
+//testSendable()
+await testContinuation()
 
 RunLoop.main.run()

@@ -24,10 +24,10 @@ class MyClass2_Strong {
     var class1: MyClass1_Strong?
     init(name: String) {
         self.name = name
-        print("Initializing class1_Strong with name \(self.name)")
+        print("Initializing class2_Strong with name \(self.name)")
     }
     deinit {
-        print("Releasing class1_Strong with name \(self.name)")
+        print("Releasing class2_Strong with name \(self.name)")
     }
 }
 
