@@ -39,7 +39,7 @@ class  Vehicle  {
 
     func  takeHit(amount:  Int)  {  hitPoints  -=  amount  }
     func  hitPointsRemaining()  ->Int  {  return  hitPoints  }
-    func  isAlive()  ->  Bool  {  return  hitPoints  >  0  ?  true  :  false  }
+    func  isAlive()  ->  Bool  { hitPoints  >  0  }
 
 }
 

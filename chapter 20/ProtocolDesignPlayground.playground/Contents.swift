@@ -24,7 +24,7 @@ protocol Pet: Nameable {
 extension Person {
     var age: Int {
         let now = Calendar.current
-        let components = now.dateComponents([.year], from: birthDate)
+        let components = now.dateComponents([.year], from: birthDate, to: Date.now)
         return components.year ?? 0
     }
     
