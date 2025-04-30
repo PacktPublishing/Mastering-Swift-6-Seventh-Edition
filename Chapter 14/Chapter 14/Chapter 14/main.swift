@@ -7,17 +7,15 @@
 
 import Foundation
 
-print("Hello, World!")
 
-
-//await loadContent()
-//await loadAllContent()
-//retrieveDataWithTask()
-//await cancelTask()
-//await testTaskGroup()
-//await testActor()
-//testSendable()
-await testContinuation()
-
-
-RunLoop.main.run()
+Task {
+    //await loadContent()
+    //await loadAllContent()
+    //retrieveDataWithTask()
+    //await cancelTask()
+    //await testTaskGroup()
+    //await testActor()
+    //testSendable()
+    await testContinuation()
+}
+dispatchMain()
