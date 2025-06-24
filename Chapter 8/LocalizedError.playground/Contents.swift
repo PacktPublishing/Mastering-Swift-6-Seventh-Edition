@@ -3,20 +3,20 @@ import Cocoa
 var greeting = "Hello, playground"
 
 enum PlayerNumberError: Error, LocalizedError {
-    case NumberTooHigh(description: String)
-    case NumberTooLow(description: String)
-    case NumberAlreadyAssigned
-    case NumberDoesNotExist
+    case numberTooHigh(description: String)
+    case numberTooLow(description: String)
+    case numberAlreadyAssigned
+    case numberDoesNotExist
     
     var errorDescription: String? {
         switch self {
-        case .NumberTooHigh(description: let description):
+        case .numberTooHigh(description: let description):
             return description
-        case .NumberTooLow(description: let description):
+        case .numberTooLow(description: let description):
             return description
-        case .NumberAlreadyAssigned:
+        case .numberAlreadyAssigned:
             return "Player number already assigned"
-        case .NumberDoesNotExist:
+        case .numberDoesNotExist:
             return "Player number does not exist"
         }
     }
@@ -32,13 +32,13 @@ struct BaseballTeam {
     
     mutating func addPlayer(player: BaseballPlayer) throws {
         guard player.number < maxNumber else {
-            throw PlayerNumberError.NumberTooHigh(description: "Max number is \(maxNumber)")
+            throw PlayerNumberError.numberTooHigh(description: "Max number is \(maxNumber)")
         }
         guard player.number > minNumber else {
-            throw PlayerNumberError.NumberTooLow(description: "Min number is \(minNumber)")
+            throw PlayerNumberError.numberTooLow(description: "Min number is \(minNumber)")
         }
         guard players[player.number] == nil else {
-            throw PlayerNumberError.NumberAlreadyAssigned
+            throw PlayerNumberError.numberAlreadyAssigned
         }
         players[player.number] = player
     }
@@ -47,7 +47,7 @@ struct BaseballTeam {
         if let player = players[number] {
             return player
         } else {
-            throw PlayerNumberError.NumberDoesNotExist
+            throw PlayerNumberError.numberDoesNotExist
         }
     }
     

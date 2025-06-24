@@ -1,10 +1,10 @@
 import Cocoa
 
 enum PlayerNumberError: Error {
-    case NumberTooHigh(description: String)
-    case NumberTooLow(description: String)
-    case NumberAlreadyAssigned
-    case NumberDoesNotExist
+    case numberTooHigh(description: String)
+    case numberTooLow(description: String)
+    case numberAlreadyAssigned
+    case numberDoesNotExist
 }
 
 
@@ -18,13 +18,13 @@ struct BaseballTeam {
     
     mutating func addPlayer(player: BaseballPlayer) throws(PlayerNumberError) {
         guard player.number < maxNumber else {
-            throw PlayerNumberError.NumberTooHigh(description: "Max number is \(maxNumber)")
+            throw PlayerNumberError.numberTooHigh(description: "Max number is \(maxNumber)")
         }
         guard player.number > minNumber else {
-            throw PlayerNumberError.NumberTooLow(description: "Min number is \(minNumber)")
+            throw PlayerNumberError.numberTooLow(description: "Min number is \(minNumber)")
         }
         guard players[player.number] == nil else {
-            throw PlayerNumberError.NumberAlreadyAssigned
+            throw PlayerNumberError.numberAlreadyAssigned
         }
         players[player.number] = player
     }
@@ -33,7 +33,7 @@ struct BaseballTeam {
         if let player = players[number] {
             return player
         } else {
-            throw PlayerNumberError.NumberDoesNotExist
+            throw PlayerNumberError.numberDoesNotExist
         }
     }
     
@@ -45,11 +45,11 @@ func testBaseballPlayer() {
     do {
         try myTeam.addPlayer(player:("David", "Ortiz", 34))
         print("Player added")
-    } catch PlayerNumberError.NumberTooHigh(let description) {
+    } catch PlayerNumberError.numberTooHigh(let description) {
         print("Error: \(description)")
-    } catch PlayerNumberError.NumberTooLow(let description) {
+    } catch PlayerNumberError.numberTooLow(let description) {
         print("Error: \(description)")
-    } catch PlayerNumberError.NumberAlreadyAssigned {
+    } catch PlayerNumberError.numberAlreadyAssigned {
         print("Error: Number already assigned")
     } catch {
         print("Error: Unknown Error")

@@ -24,7 +24,7 @@ Task {
 //    testSemaphores()
 }
 
-RunLoop.main.run()
+dispatchMain()
 
 
 

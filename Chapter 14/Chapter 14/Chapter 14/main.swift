@@ -13,9 +13,9 @@ Task {
     //await loadAllContent()
     //retrieveDataWithTask()
     //await cancelTask()
-    //await testTaskGroup()
+    await testTaskGroup()
     //await testActor()
     //testSendable()
-    await testContinuation()
+    //await testContinuation()
 }
 dispatchMain()

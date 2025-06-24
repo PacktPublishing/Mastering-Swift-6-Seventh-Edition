@@ -19,7 +19,17 @@ struct Season {
 struct Person {
     let name: String
     let age: Int
+    
 }
+
+struct Vehicle {
+    static let maxSpeed = 100
+    var currentSpeed = 0
+}
+
+let vehicleCurrentSpeed = \Vehicle.currentSpeed
+let vehicleMaxSpeed = \Vehicle.Type.maxSpeed
+
 
 func getProperty<T, E>(of object: T, using keyPath: KeyPath<T, E>) -> E {
     return object[keyPath: keyPath]
@@ -37,9 +47,14 @@ func testKeyPath() {
     print(names)
 
     let adults = people.filter{ $0[keyPath: \.age] > 17 }
-    let adults2 = people.filter{ $0.age > 17 }
+    let _ = people.filter{ $0.age > 17 }
     print(adults)
+
+
+    print("Vehicle Max Speed = \(Vehicle.self[keyPath: vehicleMaxSpeed])")
 }
 
 
 testKeyPath()
+
+

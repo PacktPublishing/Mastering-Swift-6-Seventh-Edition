@@ -15,7 +15,7 @@ func retrieveUserData(_ forUser: String) async -> String {
 }
 
 func taskGroup() async -> [String] {
-    return await withTaskGroup(of: String.self) { group in
+    return await withTaskGroup { group in
         group.addTask {
             await retrieveUserData("Jon")
         }
