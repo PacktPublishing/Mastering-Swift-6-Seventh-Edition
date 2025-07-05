@@ -37,6 +37,11 @@ func getProperty<T, E>(of object: T, using keyPath: KeyPath<T, E>) -> E {
 
 
 func testKeyPath() {
+    let team = BasketballTeam(city: "Boston", nickName: "Celtics")
+    let city = getProperty(of: team, using: cityKeyPath)
+    let city2 = getProperty(of: team, using: \.city)
+    
+    
     let people = [
         Person(name: "Anna", age: 16),
         Person(name: "Bob", age: 40),
