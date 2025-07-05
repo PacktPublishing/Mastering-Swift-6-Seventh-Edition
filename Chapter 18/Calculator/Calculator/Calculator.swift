@@ -8,7 +8,7 @@
 import Foundation
 
 struct Calculator {
-    static func addition(_ one: Double, _ two: Double) -> Double {
+    static func add(_ one: Double, _ two: Double) -> Double {
         one + two
     }
     

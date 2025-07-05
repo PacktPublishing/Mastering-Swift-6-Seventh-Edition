@@ -23,7 +23,7 @@ struct Calculator_Test {
         TestValues(first: 3.5, second: 4.5, answer: 8)
     ])
     func testAddition(_ values: TestValues) async throws {
-        #expect(Calculator.addition(values.first, values.second) == values.answer)
+        #expect(Calculator.add(values.first, values.second) == values.answer)
     }
     
     @Test("Subtraction Tests", arguments: [
