@@ -1,22 +1,22 @@
-import Cocoa
+import Foundation
 
 protocol Dog {
     var name: String { get set }
     var color: String { get set }
 }
 
-extension Dog{
+extension Dog {
     func speak() -> String {
       return "Woof Woof"
     }
 }
 
-
-struct JackRussel: Dog{
+struct JackRussel: Dog {
     var name: String
     var color: String
 }
-class WhiteLab: Dog{
+
+class WhiteLab: Dog {
     var name: String
     var color: String
     init(name: String, color: String) {
@@ -24,7 +24,7 @@ class WhiteLab: Dog{
         self.color = color
     }
 }
-struct Mutt: Dog{
+struct Mutt: Dog {
     var name: String
     var color: String
     
@@ -75,3 +75,5 @@ dogExtensionTest()
 
 print("---Existential Any---")
 existentialAny()
+
+

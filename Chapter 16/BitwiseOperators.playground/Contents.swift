@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 func andOperator(numberOne: Int8, numberTwo: Int8) {
     print("\(numberOne) = \(numberOne.binaryFormat(2))")

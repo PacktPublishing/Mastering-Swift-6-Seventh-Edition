@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 enum PlayerNumberError: Error {
     case numberTooHigh(description: String)

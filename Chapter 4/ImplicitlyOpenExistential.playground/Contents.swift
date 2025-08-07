@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 protocol Drawable {
     func draw()

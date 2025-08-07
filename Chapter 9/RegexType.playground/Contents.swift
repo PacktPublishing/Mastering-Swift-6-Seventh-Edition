@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 func validateEmailAddress(_ address: String) -> Bool {
     let pattern = Regex( /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/).ignoresCase()

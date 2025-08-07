@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 class LinkedListReferenceType {
     var value: String

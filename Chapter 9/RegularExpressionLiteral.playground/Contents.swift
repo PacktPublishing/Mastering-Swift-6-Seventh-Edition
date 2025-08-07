@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 
 func validateEmailAddressLiteral() -> Bool {

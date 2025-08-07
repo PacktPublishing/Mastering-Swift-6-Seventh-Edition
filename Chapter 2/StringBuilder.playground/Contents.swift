@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 @resultBuilder
 struct StringBuilder {

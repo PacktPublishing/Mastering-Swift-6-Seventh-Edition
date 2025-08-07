@@ -1,5 +1,3 @@
-import Cocoa
-
 import Foundation
 
 func performTask(success: () -> Void, failure: () -> Void) {

@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 fileprivate class BackendQueue<T> {
     private var items = [T]()

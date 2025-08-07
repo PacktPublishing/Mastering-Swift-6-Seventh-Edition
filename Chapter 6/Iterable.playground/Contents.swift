@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 enum DaysOfWeek: String, CaseIterable {
     case Monday = "Mon"

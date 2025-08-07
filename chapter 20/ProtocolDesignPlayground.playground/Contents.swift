@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 protocol Nameable {
     var firstName: String { get }

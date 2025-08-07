@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 struct MyPoint {
     var x = 0

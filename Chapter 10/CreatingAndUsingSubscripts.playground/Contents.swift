@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 class MyNames {
     private var names = ["Jon", "Kailey", "Kai"]

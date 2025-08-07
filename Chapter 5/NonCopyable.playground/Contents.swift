@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 struct Person: ~Copyable {
     var firstName: String

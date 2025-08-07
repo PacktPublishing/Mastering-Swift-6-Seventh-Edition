@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 protocol Describable {
     func description() -> String

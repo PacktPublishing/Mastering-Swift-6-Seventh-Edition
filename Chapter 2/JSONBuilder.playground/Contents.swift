@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 struct DictionaryComponent {
     let dictionary: [String: Any]

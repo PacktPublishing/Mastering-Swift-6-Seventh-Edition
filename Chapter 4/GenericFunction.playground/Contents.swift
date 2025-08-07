@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 func swapInts(a: inout Int,b: inout Int) {
     let tmp = a

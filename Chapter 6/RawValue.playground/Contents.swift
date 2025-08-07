@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 enum Direction: Character {
     case North = "N"

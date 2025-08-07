@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 struct MyStruct {
     var myProperty: String {

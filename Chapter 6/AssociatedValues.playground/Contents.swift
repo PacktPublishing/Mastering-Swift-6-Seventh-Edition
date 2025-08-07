@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 enum Product {
     case Book(Double, Int, Int)

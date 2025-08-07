@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 protocol Person {
     var firstName: String { get set }

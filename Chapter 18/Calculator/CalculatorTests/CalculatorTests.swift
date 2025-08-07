@@ -35,16 +35,16 @@ struct Calculator_Test {
         #expect(Calculator.subtract(values.first, values.second) == values.answer)
     }
     
-    @Test("Multiply Tests", arguments: [
+    @Test("Multiplication Tests", arguments: [
         TestValues(first: 2, second: 3, answer: 6),
-        TestValues(first: 11, second: 10, answer: 110),
+        TestValues(first: 11, second: 10, answer: 11),
         TestValues(first: 5, second: 4.5, answer: 22.5)
     ])
     func testMultiply(_ values: TestValues) async throws {
         #expect(Calculator.multiply(values.first, values.second) == values.answer)
     }
     
-    @Test("Divide Tests", arguments: [
+    @Test("Division Tests", arguments: [
         TestValues(first: 6, second: 3, answer: 2),
         TestValues(first: 11, second: 1, answer: 11),
         TestValues(first: 20, second: 5, answer: 4)
@@ -55,7 +55,7 @@ struct Calculator_Test {
     
     @Test func simpleAdditionTest() {
         withKnownIssue("Addition will fail") {
-            #expect(Calculator.addition(2, 2) == 5)
+            #expect(Calculator.add(2, 2) == 5)
         }
     }
 }

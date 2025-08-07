@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 class Product {
     var name: String

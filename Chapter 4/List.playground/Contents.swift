@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 class List<T> {
    private var items = [T]()

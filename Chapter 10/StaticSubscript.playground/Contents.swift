@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 struct Hello {
     static subscript (name: String) -> String {

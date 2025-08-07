@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 struct GradeValueType {
     var name: String
