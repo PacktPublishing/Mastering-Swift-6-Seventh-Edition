@@ -53,12 +53,13 @@ print("\(myPerson.firstName) \(myPerson.lastName)")
 myPerson = FootballPlayer(firstName: "Dan", lastName: "Marino", birthDate:Date())
 print("\(myPerson.firstName) \(myPerson.lastName)")
 
+let person1, person2: Person
+person1 = SwiftProgrammer(firstName: "Jon", lastName: "Hoffman", birthDate: Date())
+print("\(person1.firstName) \(person1.lastName)")
 
+person2 = FootballPlayer(firstName: "Dan", lastName: "Marino", birthDate:Date())
+print("\(person2.firstName) \(person2.lastName)")
 
-let person1 = SwiftProgrammer(firstName: "Jon", lastName: "Hoffman", birthDate: Date())
-print("\(myPerson.firstName) \(myPerson.lastName)")
-let person2 = FootballPlayer(firstName: "Dan", lastName: "Marino", birthDate:Date())
-print("\(myPerson.firstName) \(myPerson.lastName)")
 
 let people = [person1, person2] as [Person]
 for person in people {
@@ -97,3 +98,4 @@ if me is SwiftProgrammer {
 if let p = me as? SwiftProgrammer {
     print("\(me.firstName) is a Swift Programmer")
 }
+
