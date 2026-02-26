@@ -10,6 +10,11 @@ struct Person {
 @propertyWrapper
 struct DateFormat {
     var wrappedValue: Date
+    
+    init(wrappedValue: Date) {
+        self.wrappedValue = wrappedValue
+    }
+    
     var projectedValue: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -18,6 +23,10 @@ struct DateFormat {
 }
 
 
-let baby = Person(name: "Jon", birthDate: Date())
-print(baby.birthDate)
-print(baby.$birthDate)
+func runExample() {
+    let baby = Person(name: "Jon", birthDate: Date())
+    print(baby.birthDate)
+    print(baby.$birthDate)
+}
+
+runExample()
